@@ -1,6 +1,14 @@
-import app from "./app";
-import ENV from "./configuration/env";
+import app from "./app.js";
+import ENV from "./configuration/env.js";
+import connectToPostgres from "./configuration/db.js";
 
-const PORT = ENV.PORT;
+async function startServer() {
+    try {
+        const PORT = ENV.PORT;
+        app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
+    } catch (error) {
+        console.error("Erro ao iniciar o servidor", error);
+    }
+}
 
-app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
+startServer();

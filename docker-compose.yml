@@ -3,9 +3,9 @@ services:
         image: postgres:latest
         container_name: postgres_db
         environment:
-            POSTGRES_USER: admin
-            POSTGRES_PASSWORD: g4flex539$
-            POSTGRES_DATABASE: todolist
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+            POSTGRES_DATABASE: ${POSTGRES_DATABASE}
         ports:
             - "5432:5432"
         volumes:

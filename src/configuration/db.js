@@ -13,4 +13,4 @@ async function connectToPostgres() {
     }
 }
 
-export default connectToPostgres;
+export { connectToPostgres, sequelize };

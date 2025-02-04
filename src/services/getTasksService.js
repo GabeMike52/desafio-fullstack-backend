@@ -1,8 +1,8 @@
 import Task from "../models/Task.js";
 
-async function getTasks() {
+async function getTasksService() {
     const tasks = await Task.findAll();
     return tasks;
 }
 
-export default getTasks;
+export default getTasksService;

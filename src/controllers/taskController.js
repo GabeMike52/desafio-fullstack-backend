@@ -1,8 +1,8 @@
-import { request, response } from "express";
-import createTaskService from "../services/createTaskService";
-import getTasksService from "../services/getTasksService";
-import { request } from "express";
-import { response } from "express";
+import express from "express";
+import createTaskService from "../services/createTaskService.js";
+import getTasksService from "../services/getTasksService.js";
+
+const task = { createTask, getTasks };
 
 async function createTask(req, res) {
     try {
@@ -21,8 +21,8 @@ async function getTasks(req, res) {
         res.status(200).send(tasks);
     } catch (error) {
         console.error("Erro ao buscar tarefas.");
-        res.status(404).sendo({ error: "Nenhuma tarefa encontrada!" });
+        res.status(404).send({ error: "Nenhuma tarefa encontrada!" });
     }
 }
 
-export default { createTask, getTasks };
+export default task;

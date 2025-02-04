@@ -1,5 +1,5 @@
 import { DataTypes, Model } from "sequelize";
-import { sequelize } from "../configuration/db";
+import { sequelize } from "../configuration/db.js";
 
 class Task extends Model {}
 
@@ -19,7 +19,6 @@ Task.init(
         sequelize,
         modelName: "Task",
         tableName: "tasks",
-        timestamps: true,
         updatedAt: false,
         createdAt: "created_at",
     }

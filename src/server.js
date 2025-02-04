@@ -1,6 +1,5 @@
 import app from "./app.js";
 import ENV from "./configuration/env.js";
-import connectToPostgres from "./configuration/db.js";
 
 async function startServer() {
     try {

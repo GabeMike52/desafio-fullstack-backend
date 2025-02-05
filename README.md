@@ -22,7 +22,6 @@ npm install
 
 ```console
 #Crie um arquivo .env e insira as variáveis de ambiente
-PORT=
 POSTGRES_URI=
 POSTGRES_USER=
 POSTGRES_PASSWORD=

@@ -46,3 +46,6 @@ npm run start
 ```
 
 2. Enviar as requisições!
+
+> [!TIP]
+> As requisição podem ser feitas utilizando Postman (ou Insomnia se preferir), ou através do frontend do projeto: https://github.com/GabeMike52/desafio-fullstack-frontend

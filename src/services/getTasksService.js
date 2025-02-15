@@ -1,7 +1,7 @@
 import Task from "../models/Task.js";
 
-async function getTasksService() {
-    const tasks = await Task.findAll();
+function getTasksService() {
+    const tasks = Task.findAll();
     return tasks;
 }
 
